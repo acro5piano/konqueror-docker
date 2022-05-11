@@ -5,5 +5,12 @@ I would like to say [Konqueror](https://en.wikipedia.org/wiki/Konqueror) is "Saf
 # Run it
 
 ```
-docker run --net="host" -it --rm -v /tmp/.X11-unix/:/tmp/.X11-unix/ -e DISPLAY=:0 -e QT_QPA_PLATFORM=xcb acro5piano/konqueror
+docker run \
+    -it \
+    --rm \
+    --net="host" \
+    -v /tmp/.X11-unix/:/tmp/.X11-unix/ \
+    -e DISPLAY=:0 \
+    -e QT_QPA_PLATFORM=xcb \
+    acro5piano/konqueror
 ```
